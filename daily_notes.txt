@@ -1,0 +1,479 @@
+$ Means Normal user
+# Means Super/root user
+
+To chnage cmd promt === PS1="AVD> "  WE change it because of security purpose ,it will not show my IP Adress
+AVD>
+
+
+# UNAME: It is used to see the system information.
+uname -a :-  -a : Argument/optional  All inf abt system
+uname -s 
+-s :- showing the kernel name
+-n:- Your system name/ Hostname
+-r :- realse date of kernel
+-v :- version of kernel
+-i :- Hardware
+-m :- Machine
+-p :- processor
+-o :- os system
+
+# vi a.txt For the patch system If we want to insert anything
+
+
+sudo ymu install ifconfig -y
+
+
+How many user are connected to the system?  
+cat /etc/passwd
+
+root user :- create/modify/delete/config system
+demon/system user:- do all the task
+normal user:- install appllication and work on that
+
+Normal usr id start from 1000
+x- passwd
+
+How to see passwd of usr?
+cat /etc/shadow   It will denied permission because of normal usr
+
+sudo cat /etc/shadow It will show passwd in incripted form
+
+
+1 jan 1970 linux established.
+0- within how many day you will chnge passwd after half hr we can chnge
+9999/90- every 90 day you have to cjange passwd
+7:- passwd expirys
+
+sudo su - uname
+
+sudo yum install tree -y
+yum it is used to install system primary package management tool for installing, updating,removing, managing software packages.
+
+How to create username
+sudo useradd uname
+
+sudo passwd uname
+
+who = is used to see connected user
+
+How to delete user ?
+sudo userdel -r uname
+
+alias used for short
+alias c='clear'
+alias =all alias will show
+
+unalias -It is unalis for alias
+
+Commands:-
+date:- it will show current date
+date +'%d/%m/%y' format 14/08/2022
+date +
+%a days sun mon
+%b month
+%p am pm
+
+man- every cmd has mannaul page of each cmd
+
+cal- Calender
+cal -H
+sudo yum install ncal -y
+
+sudo yum update -y
+
+whatis date -It will show short brif of date
+
+whichdate- path showing
+echo $PATH
+
+
+
+last:- How many times you have connected to your system
+pwd:- print working directory
+
+who:- its show concurrent user 
+who -b :- when last time your system reboost.
+
+reboot:- same ip adress it will show
+start/stop:- differnt ip address it will show
+
+id:- it will show userid groupid 
+
+If you want to another user id :- id username
+
+env:- It is inbuild variable available
+
+User define variable
+MSG='Hello world'
+echo $MSG
+
+echo$$- process id (changable)
+
+all variable store in RAM
+ASCII:-  American Standard Code for Information Interchange 
+
+file :- it is used to display file type
+ls:- List out all files and directory
+Option:
+1) -l:- It will show all information in long form (Long listing)
+2) -r:- Reverse folder or file
+3) -t:- it will show current modified file or dir first
+4) -h:- It will show in human understandable lang
+5) -i(inode):- index node It will show id of that perticular attributes
+6) -a:- It will show hidden file 
+7) -m:- The "ls -m" command displays all files and directories separated by a comma.
+8) -g:- The "ls -g" option is similar to the "ls -l" option, however the '-g' option skips the file and directory owner details.
+
+cat -e : $ will display after each and every line it is hidden symbol 
+
+vi: - it is used to edit file interactive(inside of that file)
+i:- insert you will go in insert mode
+esc key: for saving data   esc :wq
+esc :q!:- Without saving come outside
+
+1) command mode
+2) Insert mode (press i) Typing
+
+command mode
+1) sielence mode
+2)movement command
+h-left, j-jump(up to down), k-up l-right, w-one word forward direction, b-backward direction, G- it will go to last line 
+2) with colon(:)
+y5h:- for copy text (5 word will copy)
+p:- for paste
+d: delete 
+:set nu :-  set number to line
+:set nonu:- no number
+:set list:- show $ ^
+want to see specific word :-/word
+/-searching word
+n-forward
+N-backward
+replace word:- :%s/oldword/newword --if there is more than 1 word in a line first word will replace
+% all the lines of file
+s- substitute
+%s/oldword/newword/g --All word replace 
+
+If you want to replace any perticular line then we can use following command 
+:6,15s/old/new/g
+
+I want to copy next 5 line :- y4j
+nyy: n line copy forward direction
+6dd: 6 line delete
+dg- remove all 
+6d- 6 line deleted
+
+
+INSERT MODE:-
+i-insert at the current cursor position
+I- cursor will move at the beginning of the currnt line for insert mode
+a-insert at the next position of cursor 
+A- last of the current line 
+o- blank line below cursor
+O-blank line above cursor
+
+pwd:- print working directory
+
+touch .filename - hide file
+Redirection:-
+
+$ ?: It is variable responsible to showing status of previous cmd executing status.
+If previous cmd not valid it will show error ststus code.
+If cmd is valid it will show ststus code 0
+1- outputcode :- eg. cal 1> a1.txt -cal is redirect to a1.txt
+2-errorcode
+
+## Capturing error:-
+If we want to capture error into file then we have to use- ncal 2> c1.txt
+
+## PIPE
+It is used for searching purpse. A pipe is a form of redirection (transfer of standard output to some other destination)
+How many line avalable in file ?
+cat a.txt | wc -l
+
+wc -It will show word count,line count ,character count
+wc -l: count line
+wc -c : count character
+wc -w:- word count
+
+#HEAD:
+1) head will show first 10 line 
+2) -n or -5n: first nth file
+
+TAIL:
+1) 10 lines from bottom
+2)tail -n4:- 4 line from bottom
+3) I want to see after 8 line data :- tail +8 filename
+I want to display line from 10 to 15?
+head -n $n file | tail -(m-n+1)
+
+CUT:- 
+It is used to cutting a porsion of data 
+1) echo "hello world' | cut -c 7- > as
+2)1,2,3- it will show individual character
+
+cat a.txt b.txt c.txt it will concanate
+paste a.txt b.txt c.txt it will show vertical
+
+paste a b c | tr -d'/t'
+tr: used with delimeter
+
+tr :- traslating and deleting character
+1) echo {a-z} | tr "AEIOU" "12345"
+2)-s squize(compress) if we have multiple spaces consicutivalyit will convert in one space - tr -s '' ''
+
+
+convert space to new line:
+hello world
+tr -s '' '/n'
+o/p:- hello 
+      world
+
+SORT:- SORT command is used to sort a file, arranging the records in a particular order.
+0) -t ' ': delimeter option
+1) -k: which column we have to sort egk -3k-third column
+2) -n: we want to sort number
+3) -u: we will get unique data 
+
+UNIQ:-
+uniq -c : count will show
+-dc :- duplicate data
+
+
+find largest no from file
+
+
+2 days ago date:
+date --date="2 days ago" +"%d","%m","%d"
+
+Q) How to check all files that are empty?
+  find path -type f -empty
+  find path -empty
+
+Q) How to find all empty directory?
+  find path -type d -empty
+
+Q)How to find all empty file and delete it?
+  find path -type f -empty -delete
+
+Q) How to find empty file of perticular user?
+  find path -type f -empty -username
+
+Q) If we want to delete blank line from file?
+   grep "\S" file.txt
+
+Q) If we want to delete blank line from file Remove blank lines (not including lines with spaces?
+   grep . file.txt
+
+Q) Display all the files, whose name is starting with 'ab' and ended with the character 't?
+   ls ab*t
+   ls [az]*
+Q) If we want to display file name of all directory starting with 'ab' and eded with 't'?
+   find . -name 'ab*t' insted of . you can give any perticular dir name
+
+#SPLIT:-
+splitting is used to break data into small different different file.
+1) split -b number:- byte wise splitting
+2) split -l 10000 file name: It will split data in 10k line
+
+
+How to set variable/alias which should be remaining after session exit?
+-->open file .bashrc and give alias and variable permantly if we logout sesssion and again login another that set variable will work here 
+
+
+ssh username@ip :- for connecting user
+
+Shell Scripting:-
+
+#!/bin/bash -->shell name
+
+1) sh filename or ./bash filename:- It is used to run script file
+
+read -p "enter file name' variable          
+
+{} - isolate the variable --join two variable
+
+
+Date:- 22/08/2022
+
+- for avoiding error we can use 2> /dev/null
+- for saving error inside of file 2> error.txt
+
+GREP:- 
+1) grep 'word' filename
+sima
+asima 
+narsima
+it wont show exact word
+
+option:-
+1) -i :- ignore ,It will take case sensetive also.
+
+2) grep -iw 'apple' filename
+It will search exact word 
+option -n: it will show line no of that perticular word
+
+3) -c :- count 
+It will count how many times word are that which we are searching
+
+4) -o:-
+If in one line there are two word same that word it will also show
+
+5) -v :- inverted
+it will not show perticular word which is we are searching
+
+6) grep -iwE 'sima|priya' file name
+It will display both word line
+
+7) egrep == grep -E
+
+we can't convert hard link file.
+
+8) -q :- quiet
+
+9) -r :- recursive
+It will search word in each and every diectory & files
+
+# chmod:- 
+-Basically responsible for permission changing of a file /dir
+
+-wrt file we have 3 types of permission:-
+1)read                r     4
+2)write               w     2
+3)exectable           x     1
+
+wrt file access there are three user
+1) owner/user         u
+2) group              g
+3) other              o
+4) all user
+
+chmod 765 filename
+      u/g/o
+1 - only executable
+2 - only write
+3 - write/executable
+4 - only read
+5 - read/executable
+6 - read/write
+7 - read/write/executable
+0 - no permission
+
+chmod 765 filename --- u(rwx) g(rw) 0(rx) 
+chmod ugo=rwx filename
+chmod u+x,g-w,o-r filename
+
+sh a.sh :- it does not required executable permission
+./a.sh :- It required permision to execute
+
+umask value is       0 0 2           
+default perm of file 6 6 4
+                    --------
+                     6 6 6
+if corresponding umask value is odd the minus from 7
+if corresponding umask value is even the minus from 6
+             umask   1 2 3
+                     7 7 6
+                    -------
+                     6 4 4        
+                    
+default perm od dir  7 7 7
+                   - 0 0 2
+                    --------
+                     7 7 5
+
+# chown
+we need sudo user / root user perm for execute chown
+by using this we can change username or group name of file 
+
+cat /etc/group -- it will show all group 
+
+# chgrp
+we can change group of perticular file
+eg. sudo chgrp filename -- only change grpname
+eg. sudo chown username:groupname filename  --- for changing username or groupname
+eg. sudo chown username filename --- only change username
+eg. sudo chown :groupname filename --- only change group name
+
+
+# Regular expression :-
+Making comman pattern to return one or more string
+
+Anchar:
+. -- any single char (sny key in the character)
+[abc] -- any single char present in  []    eg. [abcd] [pqrs] -ap aq ar as bp bq br bs .....
+{} -- 
+()
+^  Begin of the line
+$  End of line
+
+grep '.' filename - it removes all blank line
+grep '..' filename - it remove which contain atleast one character
+. represent chracter
+
+grep '.\{\5}' filename -- it will delete 4 chracter word
+
+extract all mo no from file
+grep '[0-9]\{10}' filename
+
+n1m1k2l3o4h5p5
+grep '\([a-z][0-9]\)\{5\}
+
+line starting from no or mobile no
+gre ^
+
+I/P Address Rule:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
