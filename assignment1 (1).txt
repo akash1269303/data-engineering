@@ -24,14 +24,53 @@ Q. Who is the father of Linux?
 
 Q7. Describe the Linux Architecture.
 ---> 
+
 Q8. How to check the last reboot time of the system.
+---> We can change last reboot time by using who -b command
+
 Q9. Which command is used for show the User ID and its corresponding Group ID?
+---> By using 'id' command we can see user id and group id 
+     If we want to see perticular user id then we have to use 'id -u' and want to see perticular user group 'id -g' and want to see another user id "id username"
+
 Q10.How to display 2 days back date in dd/mm/yyyy format?
+---> we can use following command for that 
+     date --date='2 days ago' +'%d/%m/%y'
+
 Q11. What is a shell? Write 4 shell name.
+---> 1) Bourne shell:-
+        - It is first design shell with unix 
+        - It is developer by stephen Bourne
+        - If we want to run script by using Bourne shell then we have to use sh eg. sh ./filename
+      2) BASH (Bourne Again Shell):-
+        - It is advance version of Bourne shell
+        - If we want to run script by using Bourne shell then we have to use bash eg. bash ./filename
+        - It is default shell
+      3) kShell (Korn shell):-
+        - It is developed by david korn
+        - Mostly this shell used in IBM AIX operating system
+        - If we want to run script by using Bourne shell then we have to use ksh eg. ksh ./filename
+      4) Cshell:-
+        - It is developed by Bill joy
+        - C meant for california university
+        - If we want to run script by using Bourne shell then we have to use tcsh eg. tcsh ./filename
+      5) Tshell:-
+        - T means Terminal 
+        - It is advanced version of Cshell
+        - If we want to run script by using Bourne shell then we have to use tcsh eg. tcsh ./filename
+        
+        
 Q12. How to see the shell name curently you have loged in.
+---> 1) By using 'echo $0'
+
+     
 Q13. WHat is the difference between who and whoami?
+---> 
 Q14. How to see last reboot time of your system?
+---> By using who -b 
+
 Q15. What is the significance of which command?
+---> 
+
 Q16. How to display the text Hello World. Hello whould be displayed with text color red and world should be displayed with background color yellow.
 Q17. what is the difference between 'who -b' command and last command.
 Q18. How to display the calender of July 2026.
