@@ -1,4 +1,8 @@
 Q1. How to see all the hidden files?
+
+
+
+
 Q2. What is the command you will use to know the OS version you are using?
 Q3. What are the different Linux Favours in market?
 Q. Why Linux is more secure than Windows ?
