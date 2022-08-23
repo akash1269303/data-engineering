@@ -1,0 +1,122 @@
+Q1. What are the different ways we can display the system name of the system.
+---> 1) uname
+     2) uname -a
+     3) uname -s
+     
+Q2. We have multiple files and subdirectories in a directory. How to identify which is a file and which is a directiry?
+---> 
+
+Q3. Suppose I have 15 files in a directories. How to display all the files having .txt as extension. 
+---> we have 15 files in directory with .txt extension and we want all that file then we have to user ls *.txt command.
+
+Q4. How to check the a given text is pallindrome or not. (Pallindrome: If a word and mirror image of the word are same, then that word is a pallindrome word)
+---> 1) echo madam | rev
+     2) read -p "Enter a string: " string
+        if [[ $(rev <<< "$string") == "$string" ]]; then
+            echo Palindrome
+        fi
+        
+Q5. What are the different ways we can create files.
+---> We can create file by three ways
+     1) By using cat cammand syntax:- cat > filename -- If file is already available it will not create file it will just open that file.
+     2) By using touch command syntax:- touch filename -- It will create empty file if file is already available then it will just chabge timestamp of thet file.
+     3) By using VI editor syntax:- vi filename --  If file is already available it will not create file it will just open that file.
+     4) By using geditor (graphical editor) syntax:- gedit filename -- It will work only for desktop version but not work for remote version.
+     5) By using nana editor syntax:- nano filename -- If file is already available it will not create file it will just open that file.
+     
+Q6. How to install a new command ?
+---> 
+
+Q7. Suppose I have many empty files are there. I want to investigate any file is Empty or not. Which is the feasible command to check the file is empty or not?
+---> If we want to find out which files are empty then we can use following command
+     syntax:- find path -type f -empty  ,Here f means file 
+     suppose I want to find out empty directories then I have to use
+     syntax:- find path -type d -empty ,Here d means directory 
+     suppose I want to find out empty files and delete that files 
+     syntax:- find path -type f -empty -delete
+
+
+Q8. We have a big file. I want to replace the word 'abcd' with 'xyz' if the word 'abcd' is present at begining of the lines. What is the command you will use in vi editor?
+---> If we want to replace any perticular word inside of visual editor then we have to use following command
+     syntax:- :%s/oldword/newword
+     suppose I want to chnage all 'abcd' word that are present in file then we have to use following command
+     syntax:- :%s/abcd/xyz/g 
+
+Q9. How to remove all the unnecessary consecutive blank lines from a file?
+---> If we want to delete blank line from file then we can use following command
+     syntax:- grep . filename 
+     suppose blank line contain space that time we can use following cmd
+     syntax:- grep '\S' filename 
+
+
+Q10. What is the difference between 'cat -n' and 'cat -b' command?
+---> suppose there is a file which contain data and with blank line if we used cat -n command then it will display number to each and every line whearas cat -b it also display number to each and every line without that line which contain space.
+for eg:- file1 contain following data
+a
+b
+
+c
+d  
+If we used cat -n then it will display
+1 a
+2 b
+3 
+4 c
+5 d
+If we used cat -b then it will display 
+1 a
+2 b
+
+3 c
+4 d
+
+
+Q11. Display all the files, whose name is starting with 'ab' and ended with the character 't'.
+---> We can do that by using ls ab*t
+
+Q12. How to set the timestamp of a file to 12th May 2023?
+---> By using touch command we can do that 
+     syntax:- touch -t 202305122334 filename
+     
+Q13. How to display the inode number of a file?
+---> 1) By using:- ls -li 
+     2) By using:- stat filename
+     
+Q14. How to delete the remaining portion of the line from the cursor position in vi?
+---> We can delete remaining portion of data from current cursor pointer then we have to use  :- d$
+
+Q15. I have a file contains 1000 lines. In that file there is a word 'virus' present in many of the lines. I want to delete all these 'virus' words. How to achieve this in vi?
+ We can use this command :- %s/\<virus\>//g
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
