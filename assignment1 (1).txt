@@ -72,7 +72,24 @@ Q15. What is the significance of which command?
 ---> 
 
 Q16. How to display the text Hello World. Hello whould be displayed with text color red and world should be displayed with background color yellow.
+--->
 Q17. what is the difference between 'who -b' command and last command.
+---> who -b is used to display last reboot information wheras last is used to display all logged in user till now.
+
 Q18. How to display the calender of July 2026.
+---> By using 'cal 05 2026' command we can display july 2026 calender.
+
 Q19: What is the difference between Kernel and Operating System?
+---> 
+              KERNEL                                                                        Operating system
+ 1) Kernel it is interface between shell and hardware                  1) OS it is interface between user and hardware
+ 2) It’s main purpose is memory management, disk management, process   2) It also provides protection and security. 
+    management and task managment.                                                                                   
+ 3) All system needs operating system to run.                          3) All system needs operating system to run.
+                                                                          
+ 
 Q20: How to set an alias permanently so that it will be available all the sessions of an instance?
+---> There are two method for setting alias permanetly.
+  1) Firstly, We have to open .bashrc hidden file  which is present inside of home directory then we have to open that file inside of editor then we have      to set alias there and save that file, then close terminal and lets try to use thst alias.
+  2) Firstly, we have to enter inside home directory and creae one file which name should be .bash_aliases and set alias and variable and save it and          lets try to use that.
+    
