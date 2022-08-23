@@ -1,0 +1,20 @@
+Q1. How to see all the hidden files?
+Q2. What is the command you will use to know the OS version you are using?
+Q3. What are the different Linux Favours in market?
+Q. Why Linux is more secure than Windows ?
+Q. When the GNU momentum started?
+Q. Who is the father of Linux?
+Q7. Describe the Linux Architecture.
+Q8. How to check the last reboot time of the system.
+Q9. Which command is used for show the User ID and its corresponding Group ID?
+Q10.How to display 2 days back date in dd/mm/yyyy format?
+Q11. What is a shell? Write 4 shell name.
+Q12. How to see the shell name curently you have loged in.
+Q13. WHat is the difference between who and whoami?
+Q14. How to see last reboot time of your system?
+Q15. What is the significance of which command?
+Q16. How to display the text Hello World. Hello whould be displayed with text color red and world should be displayed with background color yellow.
+Q17. what is the difference between 'who -b' command and last command.
+Q18. How to display the calender of July 2026.
+Q19: What is the difference between Kernel and Operating System?
+Q20: How to set an alias permanently so that it will be available all the sessions of an instance?
