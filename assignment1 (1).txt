@@ -14,13 +14,13 @@ Q3. What are the different Linux Favours in market?
      5) suse
      6)fladora
      
-Q. Why Linux is more secure than Windows ?
+Q4. Why Linux is more secure than Windows ?
 ---> Linux is more secure that windows because linux has less numbers of users and it is less chance to attach by virus whearas windows has multiple user there are chances to attach by virus.
 
-Q. When the GNU momentum started?
+Q5. When the GNU momentum started?
 ---> In 1983 Richard stallman launched first GUN project with linux.
 
-Q. Who is the father of Linux?
+Q6. Who is the father of Linux?
 ---> linus Torvalds
 
 Q7. Describe the Linux Architecture.
@@ -71,7 +71,7 @@ Q11. What is a shell? Write 4 shell name.
         
         
 Q12. How to see the shell name curently you have loged in.
----> 1) By using 'echo $0'
+---> 1) By using echo $0
 
      
 Q13. WHat is the difference between who and whoami?
