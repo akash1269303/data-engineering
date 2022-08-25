@@ -3,6 +3,7 @@ Q1. How to see all the hidden files?
      syntax:- ld -a
 
 Q2. What is the command you will use to know the OS version you are using?
+---> By using "uname -a" you will get all information about your sysytem. If You want to which os version you are using then you have to use "uname -r"
 
 Q3. What are the different Linux Favours in market?
 ---> There are server linux flavors 
@@ -17,13 +18,23 @@ Q. Why Linux is more secure than Windows ?
 ---> Linux is more secure that windows because linux has less numbers of users and it is less chance to attach by virus whearas windows has multiple user there are chances to attach by virus.
 
 Q. When the GNU momentum started?
---->
+---> In 1983 Richard stallman launched first GUN project with linux.
 
 Q. Who is the father of Linux?
 ---> linus Torvalds
 
 Q7. Describe the Linux Architecture.
----> 
+---> The Main Important components of Linux Architecture are 
+     1) User/application
+     2) Shell:-
+      - It is used to read command provided by user and it is interface between user and kernel
+      - Shell will check user provided command is valid or not if that cmd is valid then it interpret into kernel undustandable languge.
+     3) Kernel:-
+      - It is interface between shell and hardware .
+      - It is responsible to execute our command with the help of hardware.
+      - process allocation, memory allocation,io allocation ,process allocation will take care by kernel.
+     4) Hardware:-
+      - All physical devices known as hardware .eg. keyboard,Hard disk,RAM,CPU etc
 
 Q8. How to check the last reboot time of the system.
 ---> We can change last reboot time by using who -b command
@@ -64,7 +75,9 @@ Q12. How to see the shell name curently you have loged in.
 
      
 Q13. WHat is the difference between who and whoami?
----> 
+---> who: Print information about users who are currently logged in.
+     whoami: Print effective username of the user who ran whoami.
+
 Q14. How to see last reboot time of your system?
 ---> By using who -b 
 
@@ -74,6 +87,7 @@ Q15. What is the significance of which command?
 
 Q16. How to display the text Hello World. Hello whould be displayed with text color red and world should be displayed with background color yellow.
 --->
+
 Q17. what is the difference between 'who -b' command and last command.
 ---> who -b is used to display last reboot information wheras last is used to display all logged in user till now.
 
