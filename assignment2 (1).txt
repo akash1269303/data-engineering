@@ -4,7 +4,10 @@ Q1. What are the different ways we can display the system name of the system.
      3) uname -s
      
 Q2. We have multiple files and subdirectories in a directory. How to identify which is a file and which is a directiry?
----> 
+---> By using " ls -l " we will get information about files and directory inside of that there is permission if first chracter is '-' then it is indicate      that it is file whearas if first chracter is 'd' it means directory.
+     example:
+     drw-rwxr-x 2 akash akash 4096 Aug 24 16:25 dir1
+     -rwxrw-r-- 1 akash akash   98 Aug 24 15:45 log.sh
 
 Q3. Suppose I have 15 files in a directories. How to display all the files having .txt as extension. 
 ---> we have 15 files in directory with .txt extension and we want all that file then we have to user ls *.txt command.
