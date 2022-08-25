@@ -69,7 +69,8 @@ Q14. How to see last reboot time of your system?
 ---> By using who -b 
 
 Q15. What is the significance of which command?
----> 
+---> Whenever we are using any command so from which location that command is executing for checking where that executable file is available we have to        use which.
+     Syntax: which command
 
 Q16. How to display the text Hello World. Hello whould be displayed with text color red and world should be displayed with background color yellow.
 --->
