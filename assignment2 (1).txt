@@ -25,7 +25,7 @@ Q5. What are the different ways we can create files.
      5) By using nana editor syntax:- nano filename -- If file is already available it will not create file it will just open that file.
      
 Q6. How to install a new command ?
----> 
+---> sudo apt-get install <package name> 
 
 Q7. Suppose I have many empty files are there. I want to investigate any file is Empty or not. Which is the feasible command to check the file is empty or not?
 ---> If we want to find out which files are empty then we can use following command
