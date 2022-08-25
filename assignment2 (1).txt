@@ -88,8 +88,8 @@ Q13. How to display the inode number of a file?
 Q14. How to delete the remaining portion of the line from the cursor position in vi?
 ---> We can delete remaining portion of data from current cursor pointer then we have to use  :- d$
 
-Q15. I have a file contains 1000 lines. In that file there is a word 'virus' present in many of the lines. I want to delete all these 'virus' words. How to achieve this in vi?
- We can use this command :- %s/\<virus\>//g
+Q15. I have a file contains 1000 lines. In that file there is a word 'virus' present in many of the lines. I want to delete all these 'virus' words. How      to achieve this in vi?
+ ---> We can use this command :- %s/\<virus\>//g
 
 
 
