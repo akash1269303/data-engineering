@@ -44,12 +44,18 @@ Q8. We have a big file. I want to replace the word 'abcd' with 'xyz' if the word
      syntax:- :%s/oldword/newword
      suppose I want to chnage all 'abcd' word that are present in file then we have to use following command
      syntax:- :%s/abcd/xyz/g 
+   
+     
 
 Q9. How to remove all the unnecessary consecutive blank lines from a file?
 ---> If we want to delete blank line from file then we can use following command
      syntax:- grep . filename 
      suppose blank line contain space that time we can use following cmd
      syntax:- grep '\S' filename 
+     By using sed command:-
+     sed -i '/^\s*$/d' filename
+     grep -v '^\s*$' filename
+     sed -i "/^[[:space:]]*$/d" filename 
 
 
 Q10. What is the difference between 'cat -n' and 'cat -b' command?
