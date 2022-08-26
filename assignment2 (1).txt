@@ -89,7 +89,7 @@ Q14. How to delete the remaining portion of the line from the cursor position in
 ---> We can delete remaining portion of data from current cursor pointer then we have to use  :- d$
 
 Q15. I have a file contains 1000 lines. In that file there is a word 'virus' present in many of the lines. I want to delete all these 'virus' words. How      to achieve ?
- ---> We can use this command :-  sed -i 's/\<virus\>//g' filename
+ ---> We can use this command :-  sed -i '/virus/d' filename
 
 
 
