@@ -1,6 +1,6 @@
 Q1. How to see all the hidden files?
 ---> We can see all hidden files and directories by using folloeing command
-     syntax:- ld -a
+     syntax:- ls -a
 
 Q2. What is the command you will use to know the OS version you are using?
 ---> By using "uname -a" you will get all information about your sysytem. If You want to which os version you are using then you have to use "uname -r"
@@ -87,6 +87,10 @@ Q15. What is the significance of which command?
 
 Q16. How to display the text Hello World. Hello whould be displayed with text color red and world should be displayed with background color yellow.
 --->
+     yellow="\033[103m"
+     red="\033[31m"
+     NC="\033[0m"
+     echo -e "${red} welcome${NC}" "${yellow} world${NC}"
 
 Q17. what is the difference between 'who -b' command and last command.
 ---> who -b is used to display last reboot information wheras last is used to display all logged in user till now.
