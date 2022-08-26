@@ -111,4 +111,4 @@ Q20: How to set an alias permanently so that it will be available all the sessio
 ---> There are two method for setting alias permanetly.
   1) Firstly, We have to open .bashrc hidden file  which is present inside of home directory then we have to open that file inside of editor then we have      to set alias there and save that file, then close terminal and lets try to use thst alias.
   2) Firstly, we have to enter inside home directory and creae one file which name should be .bash_aliases and set alias and variable and save it and          lets try to use that. 
-    
+     
