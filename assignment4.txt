@@ -1,0 +1,163 @@
+1. Why Sorting is required and In Linux how to sort the data in descending order.
+---> 
+2. Suppose I have below data set
+
+Sima:IT:2020:FEB:MCA:60000
+Priya:SCIENCE:2019:MAR:PHYSICS:40000
+Piyush:SCIENCE:2019:JAN:MATH:70000
+Sital:IT:2019:FEB:BCA:55000
+Pritam:SCIENCE:2020:JAN:CHEMESTRY:38000
+Sohum:IT:2021:JAN:MCA:58000
+Ritesh:SCIENCE:2019:JAN:MATH:100000
+Sushil:SCIENCE:2015:FEB:MATH:9999
+
+In above data set below are the field description
+1st Field: Student Name
+2nd Field: Department
+3rd Field and 4th Field : Year and Month of Admission of the student
+5th Field: Course Name
+6th Field: Course Fee
+
+a) Sort the Records according to the ascending order of admission Admision date
+---> By using this command we can sort by admission year --> sort -k 3n -t ":" emp.csv 
+
+b) Sort the Records acccording to Department and Course Name
+--->By using this command we can sort av=bove data --> sort -k 2,5n -t ":" emp.csv
+
+c) Sort the Records according to the Ascending order of Department and their Fees
+---> By using this cmd we can do that -- sort -k 2,6n -t ":" emp.csv
+
+3. Write a script to check a given number is +ve or -ve.
+--->
+#! /bin/bash
+read -p "Enter a no for checking it is positive or negative: " no
+if [ $no -gt 0 ]; then
+ echo "The given no $no is Positive"
+elif [ $no -eq 0 ]; then
+ echo "The given no $no is neither positive nor negative"
+else
+ echo "The given no $no is negative"
+fi
+
+4. Write a script to check a given number is a odd number or even number.
+--->
+#! /bin/bash
+read -p "Enter No to check it is odd or even: " n
+if [ $[n%2] == 0 ]; then
+  echo "Given no $n is even"
+else
+  echo "Given no $n is odd"
+fi
+
+
+5. Write a script to check a given number is divisible by 5.
+--->
+#! /bin/bash
+read -p "Enter any no : " n
+if [ $[$n%5] == 0 ]; then
+  echo "Given no $n is divisible by 5"
+else
+  echo "Given no $n is not divisible by 5"
+fi
+
+
+6. Write a script to check a given number is divisible by 3 and 2.
+---> #! /bin/bash
+     read -p "Enter any no:" n
+     if [ $[n%3] -eq 0 -a $[n%2] -eq 0 ]; then
+        echo "$n is divided by 3 and 5"
+     else
+       echo "$n is not divided by 3 and 2"
+     fi 
+     
+7. If we want to execute a statement if any there is a match out of 5 possibilities, then which branching statement is easy to implement?
+---> By using case statement we can do that
+
+
+8. I am running one Restaurant. I have following Menus
+   Chicken Chilli : 200 Rupees
+   Paneer Do Piaza : 180 Rupees
+   Stuffed Mashroom : 200 Rupees
+   Chicken BirYani : 160 Rupees
+   Pron Masala : 250 Rupees
+   Matka Paneer : 280 Rupees
+   Kotmir Wadi : 100 Rupees
+   Chicken Hakka Noodle : 170 Rupees
+Write a Script, where any customer will give an Input of Menu Name, He will get a response of the Price of that Menu name. 
+For Example: Customer will run the script. After running the script, If the customer is giving the Input as 'Matka Paneer', then He should get the response as 'Please Pay 280 Rupees'
+--->  
+#! /bin/bash
+echo "Please find all Menus "
+echo "----------------------"
+echo "Chicken Chilli"
+echo "Paneer Do Piaza"
+echo "Stuffed Mashroom"
+echo "Chicken BirYani"
+echo "Pron Masala"
+echo "Matka Paneer"
+echo "Kotmir Wadi"
+echo "Chicken Hakka Noodle"
+echo "-----------------------"
+
+read -p "Please Enter above menu which you want to choose for finding out price :" menu
+case $menu in
+  "Chicken Chilli")
+     echo "The price of $menu is 200 Rupees"
+      ;;
+  "Paneer Do Piaza")
+     echo "The price of $menu is 180 Rupees"
+      ;;
+  "Stuffed Mashroom")
+     echo "The price of $menu is 200 Rupees"
+      ;;
+   "Chicken BirYani")
+     echo "The price of $menu is 160 Rupees"
+      ;;
+   "Pron Masala")
+     echo "The price of $menu is 250 Rupees"
+      ;;
+    "Matka Paneer")
+     echo "The price of $menu is 280 Rupees"
+      ;;
+    "Kotmir Wadi")
+     echo "The price of $menu is 100 Rupees"
+      ;;
+    "Chicken Hakka Noodle")
+     echo "The price of $menu is 170 Rupees"
+      ;;
+      
+     *)
+      echo "Sorry $menu not available Please Enter another one"
+      echo "Thanks"
+esac
+
+9. How to display the total number of lines present in a file.
+--->
+#! /bin/bash
+read -p "Please enter file name to see no of lines: " fname
+if [ -f $fname ]; then
+  nline=$(cat $fname | wc -l)
+  echo "Total no of lines in $fname file is $nline"
+else
+  echo "$fname is not exits"
+fi 
+
+
+10. Suppose I have a file say emp.txt sometimes contains 800 lines and some time contains 1010 lines. Write a script which will confirm the file emp.txt is a big file because it contains the lines more than 1000 lines and small file if the file contains less than 1000 lines.  
+---> 
+#!/bin/bash
+read -p "Enter file name :" fname
+if [ -e $fname ];then
+   if [ -f $fname ]; then
+      lc=$(cat $fname | wc -l)
+      if [ $lc -gt 1000 ]; then
+	 echo "$fname is a big file because it file contains $lc lines"
+      else
+	  echo "$fname is a small file because it file contains $lc lines"
+      fi
+    else
+	 echo "sorry $fname is not normal file"
+    fi
+else
+  echo "$fname does not exits"
+fi

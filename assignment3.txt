@@ -1,0 +1,37 @@
+1. What are the different types of shells? How to check how many shells are available in your system?
+---> There are server types of shell availables in linux
+    1) Bourne shell
+    2) BASH (Bourne Again Shell)
+    3) Kshell (KORN)
+    4) TShell
+2. WHat is the difference between Compiler based Language and Interpreted language?
+3. What are the steps of Running a shell scripting?
+4. How we defile a comment line in shell scripting?
+5. What is the purpose of md5sum command?
+6. What is bash?
+7. What are the different modes a user can interact with operating system?
+8. What is a swap file ?
+9. What are different modes a user uses in vi editor. Describe which mode does what?
+10. Which Linux is designed by Sun microsystem?
+11. WHat is the purpose of dot(.) and double dot(..) in each folder?
+12. Suppose I have defined some variables. WHich command I should use to list all the variables that I have defined?
+13. What is the purpose of Pipe (|) ?
+14. What is the difference between single greater than (>) and Double greater than(>>) symbols?
+15. How to copy a folder to another folder?
+16. How to copy the content of one file without over writing the target file?
+16. How to display the difference between two configuration file?
+17: How to create the below hierarchy without moving                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+├── _config.yml
+├── _drafts
+│   ├── abc──PQR
+│   └── on-SIMA 
+├── _includes
+│   ├── footer.html
+│   └── header.html
+├── _layouts
+│   ├── default.html
+│   └── post.html
+
+18. How do you install a command without loging to root account?
+19. How many types of users are present in a system ?
+20. What is the difference between cp command and mv command w.r.t the inode number? 		

@@ -1,0 +1,82 @@
+Q1. How to check whether a file is being modified or not by somebody?
+Q2. What command is used to show the unique id attached with each file.
+Q3. How to show the process id of the current shell?
+---> echo $$
+Q4. What command you will use to know the current path you are in?
+--->pwd
+Q5.What is the difference between inode number and ProcessID?
+Q6. What is the difference between single quote('), double quote(") and back quote (`)?
+Q7. What are the different ways we can see about the users?
+---> last,lastlog
+Q8. Describe the significance of PATH variable in linux.
+Q9. How to see the Kernel name and Kernel version of the linux system?
+Q10. what is the command to display which kernel you are using ?
+Q11. Command for display today's date in the format 21//Feb/2022 10:15 AM
+Q12. How to see the last 5 login information.
+Q13. How to create a hidden file in linux?
+Q14. How to replace all the words mango with Orrange from Line number 5 to Line number 20 in a file.
+Q15. How to delete 5 words in backword direction?
+Q16. How to copy 5 lines from current cursor position?
+Q17. What command you will use for removing unnecessary blank lines from a files's content?
+Q18. What is the command to display line number only for the lines which contains data?
+Q19. How to see the tabs present inside a file?
+Q20. What is a variable and write the benifits of having variables.
+Q21. How to see all the environment variables?
+Q22. Suppose I have a word 'mango'. What command I will use to generate the output as 'ognam'?
+Q23. Can we apply touch command on an existing directory in Linux. If yes, then what happens with the directory after applying the touch command on the directory?
+Q24. How to remove a directory having it's subdirectories and files.
+Q25. We can use tar command to decrease the size of a file . True / False ?
+Q26. In which scenario md5sum command is helpful , describe with scenario.
+Q27. How to see the file name and their corresponding inode number along with size of all files in appropriate unit such as(KB, MB, GB...)
+
+Follow the Data set present in file emp.txt and answer the remaining questions from Q28 to 41.
+
+M_ID,M_NAME,DEPT_ID,START_DATE,END_DATE,Salary
+M001,Richa,D001,27-Jan-07,27-Feb-07,150000
+M002,Nitin,D002,16-Feb-07,16-May-07,40000
+M003,AJIT,D003,8-Mar-07,8-Sep-07,70000
+M004,SHARVARI,D004,28-Mar-07,28-Mar-08,120000
+M005,ADITYA,D002,27-Apr-07,27-Jul-07,40000
+M006,Rohan,D004,12-Apr-07,12-Apr-08,130000
+M007,Usha,D003,17-Apr-07,17-Oct-07,70000
+M008,Anjali,D002,2-Apr-07,2-Jul-07,40000
+M009,Yash,D006,11-Apr-07,11-Jul-07,85000
+M010,Nalini,D007,15-Apr-07,15-Oct-07,9999
+
+Q28. How to display the records which are belongs to Department D003 and D006.
+Q29. Sort the data according to descending order of the Name
+Q30. How to display the records of only department ID D002 along with Heading line.
+Q31. Display the records who were joined on the Mar-07 
+Q32. Display the records who joined on Mar-07 and Left the organisation on Apr-08.
+Q33. Display the records according to the descending order of their salary.
+Q34. Display the count of Dept D004 records
+Q35. Display the Average salary of Department D003.
+Q36. Display the Total salary of Department D003 and Total salary of Department D004 using one command line.
+Q37. Display the records from line number 4 to 8.
+Q38. Write command to collect all the department Ids and display all the departments as D001,D002,D003,D004,D006,D007
+Q39. Write shell script for find the count the rows department wise. For Example
+     D001 : 1
+     D002 : 3
+     D003 : 2
+     ......
+     .......
+     And so on
+Q40. From the above data set display the data in below format. This concept in SQL is called list aggregate.
+	D001 : Richa
+	D002 : Nitin, ADITYA, Anjali
+	D003 : AJIT, Usha
+	D004 : SHAVARI, Rohan
+	D006 : Yash
+	D007 : Nalini
+Q41. Display the M_ID, DEPT_ID, NAME and SALARY of employees having salary ranges from 85000 and 120000.
+
+Q42. Write a command which will display all the files which are more than 20 MB in size and 90 days older file.
+Q43. How to zip all the files which are not accessed since last 3 year.
+Q44. What is the difference between find command and grep command?
+Q45. What is the difference between cut command and awk command?
+Q46. Which command you will use, if the admin sends a mail about the critical limit of your display space.
+Q47. How to create a package in Linux?
+Q48. Suppose I am deleting a file. But I am not able to delete the file. What would be the reason?
+Q49. How to Restrict the other users from write operation on a file?
+Q50. What should be the umask value to set the default permission of file as rwxrw-rw- ?
+
