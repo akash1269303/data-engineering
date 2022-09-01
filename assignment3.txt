@@ -4,23 +4,69 @@
     2) BASH (Bourne Again Shell)
     3) Kshell (KORN)
     4) TShell
-2. WHat is the difference between Compiler based Language and Interpreted language?
+    5) Zshell
+    6) Fish
+    - If we want to check how many shell currently available in our system then we have to go in root dirctory and use this cammand "cat etc/shells" we         will get all shells. 
+    
+2. What is the difference between Compiler based Language and Interpreted language?
+---> IN Compiler based Language firstly we have to compile code and then we have to run that code whearas in interpreated Language we dont required to        compile code its happen automatically backend we just required to run our code.
+
 3. What are the steps of Running a shell scripting?
-4. How we defile a comment line in shell scripting?
+---> step 1:- First, we have to create file and write code inside that file
+     step 2:- By default that file will not be executable permission firstly, we have to give executable permission to that file by using chmod u+x                     filename.
+     step 3:- Now we can run our scrip by using ./scriptname
+
+4. How we define a comment line in shell scripting?
+---> 1) Single line comment
+       By using # we can give comment
+     2) multi line comment
+       : '
+         This is a
+         Multi-line comments'
+
 5. What is the purpose of md5sum command?
+---> 
 6. What is bash?
+---> bash is a default shell
+     It is updated version of BOURN shell
+     
 7. What are the different modes a user can interact with operating system?
+---> 
+
 8. What is a swap file ?
+--->
+
 9. What are different modes a user uses in vi editor. Describe which mode does what?
+---> There are three different modes available in vi editor
+     1) Cammand mode
+       - Inside of cammand mode we can run our all cammand related to vi editor 
+       - It is default mode when we open vi editor
+     2) Insert Mode
+       - Inside of insert mode we can insert data inside file
+       4 ways we can insert data
+       1) A 2)a 3)i 4)I
+     3) Exit Mode
+       - we can write cammand related to exit
+       
 10. Which Linux is designed by Sun microsystem?
+--->
 11. WHat is the purpose of dot(.) and double dot(..) in each folder?
+---> . means current directory and .. means parent directory
+
 12. Suppose I have defined some variables. WHich command I should use to list all the variables that I have defined?
+---> suppose we have set user define variable and we want see that all variable then we have to use set cammand.
+
 13. What is the purpose of Pipe (|) ?
+---> If we want to output of one cammand as a input of another command then we can use pipe .
+
 14. What is the difference between single greater than (>) and Double greater than(>>) symbols?
+---> If we used single greater that it will overwrite the data wheras By using double greater than we can append data.
+
 15. How to copy a folder to another folder?
+---> By using cp -r dir1 dir2 
 16. How to copy the content of one file without over writing the target file?
 16. How to display the difference between two configuration file?
-17: How to create the below hierarchy without moving                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+17: How to create the below hierarchy without moving                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 ├── _config.yml
 ├── _drafts
 │   ├── abc──PQR
