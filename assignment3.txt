@@ -65,8 +65,11 @@
 15. How to copy a folder to another folder?
 ---> By using cp -r dir1 dir2 
 16. How to copy the content of one file without over writing the target file?
+---> cat sed.txt >> c.txt
 16. How to display the difference between two configuration file?
-17: How to create the below hierarchy without moving                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+--->
+
+17: How to create the below hierarchy without moving                                                                                                    
 ├── _config.yml
 ├── _drafts
 │   ├── abc──PQR
@@ -79,5 +82,10 @@
 │   └── post.html
 
 18. How do you install a command without loging to root account?
+---> sudo apt-get install package
+
 19. How many types of users are present in a system ?
+---> Super user
+     Normal user
+     
 20. What is the difference between cp command and mv command w.r.t the inode number? 		
