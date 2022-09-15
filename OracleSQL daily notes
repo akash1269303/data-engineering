@@ -60,6 +60,26 @@ Many customer are purchasing one product
 Many to many
 customers can purchase various products, and products can be purchased by many customers.
 
+Relation Database:-
+Data store in structural way i.e in table format consisting rows and column. 
+
+Yuple sets are
+T1=(100,AAA,SBI..)
+
+Advantages of RELATIONS / TABLES:-
+Two major advantages are there
+1) Minimum redundancy
+-->It stores data with minumum repetation of data (less duplication)
+
+2) Quick data access
+---> It is possible due to association amoung the domain set of the data.These association are implemented with the concept of indexing and hashing in gernal.
+These association directly accesses the dat withount naviaging to the uneccessary rows.
+eg:-
+if you want SB account customers then navigating directly to those rows.
+
+RELATIONAL DATABASE MANAGMENT(RDBMS)
+It is based on relational database cocepts which is proposed by a mathmatician called Dr. E.F Codd in 1970. It is theory and it is implimented as a database 
+oracle with tables in 1979 by oracle corporation.This is best and largest database in world.
 
 
 
