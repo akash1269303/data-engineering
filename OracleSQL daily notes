@@ -17,3 +17,65 @@ ANO CNAME BALANCE  EMAILID        PHONE
 
 Observe that the data is arranged in sequential mannaer.
 
+The data is searched in sequential manner. So it takes lot of time if data is large .so it is not suitable for bank and others companies having millions of record.
+
+DATABASE:-
+In this large of amount data is stored in table formant consisting rows and columns. Even though it is similar to flat model in two dimential format it is 
+different from it because it is implemented on modern algebra topics as sets , functions,relations etc.
+
+If the data of a bank represented as table in database it looks like this
+
+ACCNO     CNAME   ACC_TYPE    BALANCE   EMAILD            PHONE_NO
+100       AAA       SBI         50K     aaa@gmail.com    888890989
+200       BBB       CA          30k     bb@gmail.com     898983786
+
+Above representation data called mathmatical as relation.
+
+A relation is a combination of demain sets and tuple set.
+
+Domain sets:-
+It contains all data belongs to a particular attributes of an oranizational elemets  sunch as Account in a bank.
+
+The attributes are cname,acctype etc
+Each attributes represents as one domain
+Daccno=(100,101...) domain sets
+
+The domain sets are mapped with one another using certain function such as 
+
+1) one to one
+2) one to many
+3) many to one
+4) Many to many
+
+One to one
+One customer have one account no
+
+One to many
+One customer having multiple account 
+
+Many to one
+multple customer having one acc type
+Many customer are purchasing one product
+
+Many to many
+customers can purchase various products, and products can be purchased by many customers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
