@@ -1,2 +1,19 @@
 
+Lession 1:-
+DATA:-
+The details of an organization are represented as data.
+
+eg:-
+In a bank details are account no, customer name, balance, email id,phoneno etc. Thease data represented as data.
+
+Organizational data:-
+Since the data of an organization is huge it is needed to be managed properly.
+
+Flat data Management Model:-
+In this data is two dimession first dimesion  is record and secound dimensuion is field . A reecord is collection offields.
+
+ANO CNAME BALANCE  EMAILID        PHONE
+100 AAA   50000   aaa@gmail.com   8899990289
+
+Observe that the data is arranged in sequential mannaer.
 
