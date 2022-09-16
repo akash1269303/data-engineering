@@ -81,7 +81,103 @@ RELATIONAL DATABASE MANAGMENT(RDBMS)
 It is based on relational database cocepts which is proposed by a mathmatician called Dr. E.F Codd in 1970. It is theory and it is implimented as a database 
 oracle with tables in 1979 by oracle corporation.This is best and largest database in world.
 
+Day 2 session:-
 
+TABLE:-
+Table is collection of rows and colums. Here row is nothing but tuple set and column is nothing but domain set.
+oracle database is a collection of tables.
+
+NOTES:-
+Since oracle database is a trlational database and the first rule of relational database is The information. According to this rule
+
+Relational database stores data only in one format called relation (Table) .No other format is permitted.
+
+A table must be created with atleast one column and can be upto 1000 columns in oracle database.
+
+SQL:-
+Oracle database uses a lang called structural Ouery lang (SQL). All instruction to oracle database is given in this language only.
+
+SQL is declarative lang and it contains commands only no programming.
+
+NOTES:-
+1)  is a case innsitive language for commands
+2) It is case sensitive for data eg. eame,esal etc
+3) SQL commands can be written in any no of line but it should be terminated by semicolum.
+
+Oracle database server working env
+
+The env contains 4 components
+1) USER
+2) Oracle client
+3) racle databse server
+4) Oracle database
+
+Oracle clents:-
+IT is interface between user and database server. Useers submit requests at client. client forward the request to database server and finally recives response
+from db server after completion of execution of the submitted request.
+Oracale clients are LIVESQL,SQL plus,SQL Developer etc. are supported by oracle corporation. THere are some more third party clients are also there .They are 
+TOAD,PLSQL Developer, SQL Navigator etc.
+
+Oracle user:-
+These are the authporized users for connecting db with valid user id and password .There are some bult in users for oracle db.
+
+1) Sys user (Owner of the db)
+2) SYSTEM user (Administration of db)
+3) Hr user (Developer)
+
+Password are given at the time of installation.
+
+CREATE Table command:-
+It is sql command used to create a table in oracle database.
+DDL (ata defination language )
+
+CREATE TABLE table_name (
+(coumn-1 data_type )size );
+
+eg. 
+CREATE TABLE Employee )
+eno number (6),
+Ename varchar2(20),
+Gender char(1),
+Salary number(9,2) );
+
+describe tablename;   OR DESC tablename;
+revivew table information
+This cmd is used to return structure of the table.It displays columns,data types ans sizes.
+
+Column	Null?	Type
+ENO	 - 	NUMBER(6,0)
+ENAME	 - 	VARCHAR2(20)
+GENDER	 - 	CHAR(1)
+SALARY	 - 	NUMBER(9,2)
+
+storing the data into database
+INSERT INTO tablename (col1,col2,col3...)
+VALUE(1st value,value2,value3..);
+
+INSERT COMMAND FOR entering partial data:-
+In this values are entered into the required columns only. so ot is needed to mention the column names for inserting data
+In this case, values are inserted into given colmn whearas rest of column are kept empty(NULL).
+
+insert into Employee (eno,Ename,Gender) Values(6,'Akash','F');
+here we are not inserting salary it will take null value.
+
+SELECT:-
+It is query language (OL) cmd to read to retrive data from a table.
+
+WHERE CONDITION:-
+select * from Employee where gender='M' OR Ename ='dipak';
+
+SQL UPDATE
+The SQL commands (UPDATE and DELETE) are used to modify the data that is already in the database. The SQL DELETE command uses a WHERE clause.
+UPDATE table_name SET [column_name1= value1,... column_nameN = valueN] [WHERE condition]  
+eg.
+update Employee set gender ='M' where ename ='Akash';
+
+DELETE COMMAND:- It removes rows from a table.
+
+Syntax:-
+DELETE FROM table_name [WHERE condition];  
 
 
 
