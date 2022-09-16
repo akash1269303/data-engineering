@@ -180,6 +180,9 @@ Syntax:-
 DELETE FROM table_name [WHERE condition];  
 
 
+REMOVING COLUMNS DATA:-
+It is used to remove  data from one or more columns without removing columns from table.
+
 
 
 
